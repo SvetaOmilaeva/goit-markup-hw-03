@@ -1,0 +1,159 @@
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --primary-white-color: #FFFFFF;
+}
+
+body {
+    background: var(--primary-white-color);
+    color: var(--primary-text-color);   
+    font-family: 'Roboto', sans-serif;
+    
+/* Logo */
+}
+.logo {
+    color: var(--primary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+}
+.logo-web {color: var(--accent-color);}
+
+/* убрать маркер списка*/
+.list {
+    list-style: none;
+}
+.link {text-decoration: none;}
+
+/* навигация */
+.site-nav .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.site-nav .link:hover,
+.site-nav .link:focus
+{color: var(--primary-text-color)}
+
+.site-nav .link.current {color: var(--accent-color);}
+
+.contacts .link {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.contacts .link:hover, .contacts .link:focus {color: var(--accent-color);}
+
+/* Hero */
+
+.hero-title {
+    background: var(--title-text-color);
+    color: var(--primary-white-color);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+}
+/* button */
+.btn {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    cursor: pointer;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+
+}
+
+.btn.primary {
+    background: var(--accent-color);
+    color: var(--primary-white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+}
+
+/* Sections */
+
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+}
+
+/* About webstudio */
+
+.feature {
+    background: #E5E5E5;
+}
+.feature .title,
+.team .card-name,
+.galery .card-name {
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* our team */
+.team {
+    background: #F4F4FD;
+    text-align: center;
+}
+.card {
+    background: var(--primary-white-color);
+}
+/* footer */
+.page-footer {
+    background: var(--title-text-color);
+}
+.page-footer .logo {
+    line-height: 1.17;
+    color: #F4F4FD;
+}
+.page-footer .text {
+    color: #E7E9FC;
+}
+
+/* portfolio */
+.portfolio {
+    background: #E5E5E5;
+}
+
+/* filter */
+
+.filter .btn {
+    background: #F4F4FD;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+.filter .btn:hover{
+    background-color: #404BBF;
+    color: var(--primary-white-color);
+    }
+
