@@ -23,6 +23,11 @@ h1, h2, h3, h4, p {
     /* outline: 2px solid lime; */
 }
 
+.section {   
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 body {
     background: var(--primary-white-color);
     color: var(--primary-text-color);   
@@ -34,7 +39,7 @@ body {
     padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
 }
-.container.nav {
+.page-header .container {
     display: flex;
     align-items: center;
 }
@@ -106,7 +111,7 @@ body {
 
 }
 .hero-title {
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 
     text-align: center;
     color: var(--primary-white-color);
@@ -128,6 +133,7 @@ body {
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
+    border: none;
 
     background: var(--accent-color);
     color: var(--primary-white-color);
@@ -139,14 +145,6 @@ body {
 }
 
 /* Sections */
-
-/* .section {   
-    padding-top: 120px;
-    padding-bottom: 120px; */
-
-/* .section.feature {
-    padding-bottom: 0;
-} */
 
 .section-title {
     margin-top: 0;
@@ -164,16 +162,16 @@ body {
 /* About webstudio */
 
 .feature {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
 }
-
 
 .container .feature-lists {
     display: flex;
     align-items: center;
 }
-
+.feature-lists .item {
+    width: 264px;
+}
 .feature-lists .item:not(:last-child) {
     margin-right: 24px;
 }
@@ -196,9 +194,9 @@ body {
     letter-spacing: 0.02em;
 }
 /* What are we doing */
-.works {
+/* .works {
     padding-bottom: 120px;
-}
+} */
 .container .works-lists{
     display: flex;
     align-items: center;
@@ -221,10 +219,9 @@ body {
 
 }
 .section.team {
-    background: #F4F4FD;
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    background: #F4F4FD;  
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 
 .team .card-name {
@@ -232,6 +229,7 @@ body {
 }
 
 .team .card {
+    text-align: center;
     padding-bottom: 32px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -248,6 +246,7 @@ body {
 }
 
 .page-footer .logo {
+    margin-right: 0;
     line-height: 1.17;
     color: #F4F4FD;
 }
@@ -259,7 +258,7 @@ body {
 /* portfolio */
 .portfolio {
     padding-top: 96px;
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
 }
 
 /* filter */
@@ -293,17 +292,19 @@ body {
     flex-wrap: wrap;
 
 }
-.card-img {
+img {
     display: block;
+    max-width: 100%;
+    height: auto;
     
 }
 .galery .card-name {
-    margin-top: 32px;
-    margin-left: 16px;
+    padding-top: 32px;
+    padding-left: 16px;
 }
 .galery .text {
-    margin-bottom: 32px;
-    margin-left: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 .galery .card {
     margin-right: 24px;
